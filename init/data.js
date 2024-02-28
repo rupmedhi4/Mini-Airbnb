@@ -3,7 +3,7 @@ const sampleListings = [
     title: "Cozy Beachfront Cottage",
     description:
       "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
-    image: "https://images.unsplash.com/photo-1518684079-3c830dcef090?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZHViYWl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+    image: "https://images.unsplash.com/photo-1601918774946-25832a4be0d6?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 1500,
     location: "Malibu",
     country: "United States",
@@ -85,7 +85,7 @@ const sampleListings = [
     title: "Cozy Beachfront Cottage",
     description:
       "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
-    image: "https://images.unsplash.com/photo-1509868918747-25c94513f5db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJlYWNofGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+    image: "https://plus.unsplash.com/premium_photo-1683917068755-c2890e4824e1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 1500,
     location: "Malibu",
     country: "United States",
@@ -94,7 +94,7 @@ const sampleListings = [
     title: "Cozy Beachfront Cottage",
     description:
       "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
-    image: "https://images.unsplash.com/photo-1593720213429-3b1a229773ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmlsbGFpbmNlJTIwa2l0Y2hlbnxlbnwwfHwwfHx8&auto=format&fit=crop&w=800&q=60",
+    image: "https://images.unsplash.com/photo-1521401830884-6c03c1c87ebb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 1500,
     location: "Malibu",
     country: "United States",
@@ -102,7 +102,7 @@ const sampleListings = [
     title: "Cozy Beachfront Cottage",
     description:
       "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
-    image: "https://images.unsplash.com/photo-1577470131243-72a98c253d25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJlYWNofGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+    image: "https://plus.unsplash.com/premium_photo-1686090450574-214118216bdc?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 1500,
     location: "Malibu",
     country: "United States",
@@ -111,7 +111,7 @@ const sampleListings = [
     title: "Cozy Beachfront Cottage",
     description:
       "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
-    image: "https://images.unsplash.com/photo-1571046147925-8bdf8e3eac0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHZpbGxhaW5jZSUyMGtpdGNoZW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+    image:"https://plus.unsplash.com/premium_photo-1686167988053-3c9501537a8d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 1500,
     location: "Malibu",
     country: "United States",
@@ -120,7 +120,7 @@ const sampleListings = [
     title: "Cozy Beachfront Cottage",
     description:
       "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
-    image: "https://images.unsplash.com/photo-1585336073664-3128786a38d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJlYWNofGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+    image: "https://images.unsplash.com/photo-1564013434775-f71db0030976?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 1500,
     location: "Malibu",
     country: "United States",
@@ -129,7 +129,7 @@ const sampleListings = [
     title: "Cozy Beachfront Cottage",
     description:
       "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
-    image: "https://images.unsplash.com/photo-1592436055205-d54b6b0fca64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHZpbGxhaW5jZSUyMGtpdGNoZW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+    image: "https://plus.unsplash.com/premium_photo-1683917068753-42d5abcc3ce4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 1500,
     location: "Malibu",
     country: "United States",
@@ -138,7 +138,7 @@ const sampleListings = [
     title: "Cozy Beachfront Cottage",
     description:
       "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
-    image: "https://images.unsplash.com/photo-1575519544568-20ca99a3c1d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHZpbGxhaW5jZSUyMGtpdGNoZW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+    image:"https://images.unsplash.com/photo-1602699905588-a6c9f58bad2b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 1500,
     location: "Malibu",
     country: "United States",
@@ -147,7 +147,7 @@ const sampleListings = [
     title: "Cozy Beachfront Cottage",
     description:
       "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
-    image: "https://images.unsplash.com/photo-1543340904-5e919f7a8bdb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHZpbGxhaW5jZSUyMGtpdGNoZW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+    image: "https://plus.unsplash.com/premium_photo-1686090449403-43c24a6a4f79?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 1500,
     location: "Malibu",
     country: "United States",
@@ -156,7 +156,7 @@ const sampleListings = [
     title: "Cozy Beachfront Cottage",
     description:
       "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
-    image: "https://images.unsplash.com/photo-1542282088-4b3cdc60f7f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHZpbGxhaW5jZSUyMGtpdGNoZW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+    image:"https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=1530&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 1500,
     location: "Malibu",
     country: "United States",
@@ -165,7 +165,7 @@ const sampleListings = [
     title: "Cozy Beachfront Cottage",
     description:
       "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
-    image: "https://images.unsplash.com/photo-1574274040315-6f235756fc92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHZpbGxhaW5jZSUyMGtpdGNoZW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 1500,
     location: "Malibu",
     country: "United States",
@@ -174,7 +174,7 @@ const sampleListings = [
     title: "Cozy Beachfront Cottage",
     description:
       "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
-    image: "https://images.unsplash.com/photo-1574274040315-6f235756fc92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHZpbGxhaW5jZSUyMGtpdGNoZW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+    image: "https://images.unsplash.com/photo-1584738766473-61c083514bf4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 1500,
     location: "Malibu",
     country: "United States",
