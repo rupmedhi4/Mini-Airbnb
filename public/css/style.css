@@ -7,12 +7,12 @@ body{
     flex: 1;
 }
 .navbar{
- height: 5rem;   
+ height: 5rem;
 }
 .fa-compass{
     color:#fe424d ;
     font-size: 2rem;
-    
+
 }
 .nav-link{
     color: #222222 !important;
@@ -74,4 +74,15 @@ body{
 .card-img-overlay:hover{
     opacity: 0.2;
     background-color: white;
+}
+
+/* show page */
+.show-img{
+    height: 30vh;
+}
+.card{
+    border: none !important;
+}
+.btns{
+    display: flex;
 }

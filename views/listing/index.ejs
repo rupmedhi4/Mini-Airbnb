@@ -10,15 +10,12 @@
                 src=<%=listing.image%> alt="listing image"  
                 style="height: 20rem"
               />
-              <div class="card-img-overlay">
-                
-              </div>
-
+              <div class="card-img-overlay"></div>
               <div class="card-body">
-              <p class="card-text">
-              <%= listing.title%> <br>
-              &#x20B9;<%= listing.price.toLocaleString('en-IN') %> / night
-              </p>
+                  <p class="card-text"> 
+                    <span><%= listing.title%></span><br>
+                    <span><%= listing && listing.price ? listing.price.toLocaleString('en-IN') : 'N/A' %></span>
+                </p> 
               </div>
           </div>
       </a>
@@ -26,4 +23,3 @@
   </div>
 </body>
   <ul>
- 
