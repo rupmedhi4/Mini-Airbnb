@@ -35,6 +35,7 @@ app.use(express.static(path.join(__dirname,'/public')))
 
 
 
+
 app.get('/',(req,res)=>{
     res.send('hi i am root')
 })
@@ -73,11 +74,16 @@ app.get('/listing/:id',async (req,res)=>{
 
 
 //create route
-app.post('/listing', async(req,res)=>{
-    let listing = req.body.listing
-   const newListing = new Listing(listing)
-    await newListing.save()
-    res.redirect('/listing');
+app.post('/listing', async(req,res, next)=>{
+    try{
+        let listing = req.body.listing
+        const newListing = new Listing(listing)
+        await newListing.save()
+        res.redirect('/listing');
+    }catch(err){
+        next(err)
+    }
+  
 })
 
 //edit route
@@ -101,4 +107,9 @@ app.delete('/listing/:id',async(req,res)=>{
     res.redirect('/listing')
 })
 
+
+// ERROR MIDDLEWARE
+app.use((err, req, res, next) => {
+    res.send("Something went wrong"); 
+});
 
