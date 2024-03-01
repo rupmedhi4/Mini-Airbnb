@@ -5,38 +5,40 @@ const Listing = require('./modals/listing')
 const path = require('path')
 var methodOverride = require('method-override')
 const ejsMate = require('ejs-mate')
+const wrapAsync = require('./utils/wrapAsync.js')
+
 
 
 const MONGO_URL = 'mongodb://127.0.0.1:27017/wanderlust';
 
-app.listen(4000,()=>{
+app.listen(4000, () => {
     console.log('server is listening to port 4000');
 })
 
-main().then(()=>{
+main().then(() => {
     console.log('connected to DB');
 })
-.catch((err) => {
-    console.log(err)
-});
+    .catch((err) => {
+        console.log(err)
+    });
 
 async function main() {
-  await mongoose.connect(MONGO_URL);
+    await mongoose.connect(MONGO_URL);
 }
 
 
-app.set('view engine','ejs')
+app.set('view engine', 'ejs')
 app.set('views', path.join(
-    __dirname,'views'))
-app.use(express.urlencoded({extended:true}))
+    __dirname, 'views'))
+app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
 app.engine('ejs', ejsMate);
-app.use(express.static(path.join(__dirname,'/public')))
+app.use(express.static(path.join(__dirname, '/public')))
 
 
 
 
-app.get('/',(req,res)=>{
+app.get('/', (req, res) => {
     res.send('hi i am root')
 })
 
@@ -46,7 +48,7 @@ app.get('/',(req,res)=>{
 //         title :"my home",
 //         description : " this is my home",
 //         price : 1200,
-     
+
 //         country : 'india'
 //     })
 //     await sampleListing.save()
@@ -55,54 +57,49 @@ app.get('/',(req,res)=>{
 // })
 
 //index route
-app.get('/listing',async (req,res)=>{
+app.get('/listing', async (req, res) => {
     let allListing = await Listing.find({})
-    res.render('listing/index.ejs',{allListing})
+    res.render('listing/index.ejs', { allListing })
 })
 
 //new route
-app.get('/listing/new',(req,res)=>{
+app.get('/listing/new', (req, res) => {
     res.render('listing/new.ejs')
 })
 
 //show route
-app.get('/listing/:id',async (req,res)=>{
-    let {id}= req.params;
+app.get('/listing/:id', async (req, res) => {
+    let { id } = req.params;
     const listing = await Listing.findById(id)
-    res.render('listing/show.ejs',{listing})
+    res.render('listing/show.ejs', { listing })
 })
 
 
 //create route
-app.post('/listing', async(req,res, next)=>{
-    try{
-        let listing = req.body.listing
-        const newListing = new Listing(listing)
-        await newListing.save()
-        res.redirect('/listing');
-    }catch(err){
-        next(err)
-    }
-  
-})
+app.post('/listing', wrapAsync(async (req, res, next) => {
+    let listing = req.body.listing
+    const newListing = new Listing(listing)
+    await newListing.save()
+    res.redirect('/listing');
+}))
 
 //edit route
-app.get('/listing/:id/edit',async(req,res)=>{
-    let {id}= req.params;
+app.get('/listing/:id/edit', async (req, res) => {
+    let { id } = req.params;
     const listing = await Listing.findById(id)
-    res.render('listing/edit.ejs',{listing})
+    res.render('listing/edit.ejs', { listing })
 })
 
 //UPDATE ROUTE
-app.put('/listing/:id', async(req,res)=>{
-    let {id}= req.params;
-  await Listing.findByIdAndUpdate(id,{...req.body.listing})
-  res.redirect( `/listing/${id}`)
+app.put('/listing/:id', async (req, res) => {
+    let { id } = req.params;
+    await Listing.findByIdAndUpdate(id, { ...req.body.listing })
+    res.redirect(`/listing/${id}`)
 })
 
 //delete route
-app.delete('/listing/:id',async(req,res)=>{
-    let {id} = req.params
+app.delete('/listing/:id', async (req, res) => {
+    let { id } = req.params
     await Listing.findByIdAndDelete(id)
     res.redirect('/listing')
 })
@@ -110,6 +107,6 @@ app.delete('/listing/:id',async(req,res)=>{
 
 // ERROR MIDDLEWARE
 app.use((err, req, res, next) => {
-    res.send("Something went wrong"); 
+    res.send("Something went wrong");
 });
 
