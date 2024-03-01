@@ -2,7 +2,7 @@
 <body>
   <div class="row">
     <div class="col-8 offset-2">
-        <form method="POST" action="/listing"  >
+        <form method="POST" action="/listing" novalidate class=" needs-validation">
         <h3 class="mt-5">Create a new Listing</h3>
         <div class="mb-3">
             <label for="title" class="form-label">Title</label>
@@ -11,6 +11,7 @@
             placeholder="enter title"
             type="text"
             class="form-control"
+            required
             />
         </div>
         <div class="mb-3">
@@ -21,6 +22,7 @@
             cols="30"
             rows="10"
             class="form-control"
+          required
             ></textarea>
         </div>
         <div class="mb-3">
@@ -40,6 +42,7 @@
                 placeholder="enter your price"
                 type="number"
                 class="form-control"
+              required
                 />
             </div>
             <div class="mb-3 col-md-8">
@@ -49,6 +52,7 @@
                 placeholder="enter your country"
                 type="text"
                 class="form-control"
+                required
                 />
             </div>
         </div>
@@ -59,6 +63,7 @@
             placeholder="enter your location"
             type="text"
             class="form-control"
+            required
             />
         </div>
         <button class="btn btn-dark mt-5 mb-5">ADD</button>

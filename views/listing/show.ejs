@@ -14,7 +14,7 @@
         <p class="card-text">
           <b><%= listing.title %></b> <br />
           <span><%= listing.description %></span><br />
-          <span>&#x20B9;<%= listing.price.toLocaleString('en-IN') %></span
+          <span> &#x20B9;<%= listing.price.toLocaleString('en-IN') %></span
           ><br />
           <span><%= listing.location %></span><br />
           <span><%= listing.country %></span><br />
@@ -22,8 +22,7 @@
       </div>
     </div>
   </div>
-
-  <div class="btns mb-5">
+  <div class="edit-btn mb-5">
     <a href="/listing/<%=listing._id%>/edit" class="btn btn-dark col-1 offset-4">Edit</a>
     <form method="post" action="/listing/<%=listing._id%>?_method=DELETE">
       <button class="btn btn-dark offset-2">Delete</button>

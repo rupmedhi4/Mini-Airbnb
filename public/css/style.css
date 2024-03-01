@@ -83,6 +83,6 @@ body{
 .card{
     border: none !important;
 }
-.btns{
+.edit-btn{
     display: flex;
 }
