@@ -14,7 +14,7 @@
         <p class="card-text">
           <b><%= listing.title %></b> <br />
           <span><%= listing.description %></span><br />
-          <span> &#x20B9;<%= listing.price.toLocaleString('en-IN') %></span
+          <span> &#x20B9;<%= listing.price ? listing.price.toLocaleString('en-IN') : "N/A" %></span
           ><br />
           <span><%= listing.location %></span><br />
           <span><%= listing.country %></span><br />
