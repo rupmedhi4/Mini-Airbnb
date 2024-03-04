@@ -8,6 +8,7 @@ const ejsMate = require('ejs-mate')
 const wrapAsync = require('./utils/wrapAsync.js')
 const expressError = require('./utils/expressError.js')
 const {listingSchema} = require("./schema.js")
+const Review = require('./modals/review.js')
 
 
 const MONGO_URL = 'mongodb://127.0.0.1:27017/wanderlust';
@@ -116,6 +117,23 @@ app.delete('/listing/:id', wrapAsync(async (req, res) => {
     await Listing.findByIdAndDelete(id)
     res.redirect('/listing')
 }))
+
+//Reviews
+//POST ROUTE
+
+app.post('/listing/:id/review', async (req,res)=>{
+  let listing = await Listing.findById(req.params.id)
+  console.log(req.body.review);
+  let newReview = new Review(req.body.review)
+
+  listing.reviews.push(newReview)
+  await listing.save()
+  await newReview.save()
+
+  console.log("new review saved");
+  res.redirect(`/listing/${listing._id}`)
+
+})
 
 
 // page not found route
